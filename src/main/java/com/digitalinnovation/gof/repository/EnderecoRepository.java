@@ -1,9 +1,9 @@
 package com.digitalinnovation.gof.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import com.digitalinnovation.gof.model.Endereco;
 
-public interface EnderecoRepository extends JpaRepository<Long, Endereco> {
+public interface EnderecoRepository extends CrudRepository<Endereco, Long> {
 
 }
