@@ -18,6 +18,15 @@
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.3</spring-cloud.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>swagger</id>
+			<name>swagger</name>
+			<url>http://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 
 		<!-- Spring Data JPA (Adicionado via spring Initializr) -->
@@ -69,9 +78,15 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
+			<scope>compile</scope>
 		</dependency>
 
-
+		<!-- OpenAPI/Swagger (adicionado manualmente) -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.6.9</version>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>

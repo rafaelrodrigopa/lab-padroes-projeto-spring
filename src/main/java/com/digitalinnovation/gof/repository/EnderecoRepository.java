@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.digitalinnovation.gof.model.Endereco;
 
-public interface EnderecoRepository extends CrudRepository<Endereco, Long> {
+public interface EnderecoRepository extends CrudRepository<Endereco, String> {
 
 }
